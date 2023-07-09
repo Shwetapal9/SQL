@@ -1,0 +1,70 @@
+DDL Commands and Queries
+
+-- Create database using below command:
+CREATE DATABSE BANKING;
+
+
+-- Connect to BANKING database and create below tables.
+
+-- BANKING Dataset
+Customers
+Accounts
+Products - car load, house loan, fixed deposit, saving account
+Employees
+Transactions - type of trns, amt, date,
+Branch -
+
+
+//Create command
+
+create table customers
+(
+    first_name  varchar(20),
+    last_name   varchar(20),
+    id          int,
+    acc_no      int,
+    dob         date,
+    address     varchar(200),
+    phone       int
+);
+
+//Select command to fetch the table data
+
+select * from customers;
+
+//Alter command to change the table schema/c
+alter table customers rename column id to cust_id;
+alter table customers rename to customers_new;
+alter table customers_new rename to customers;
+alter table customers alter column phone type bigint;
+
+rename column
+rename table name
+modify a data type
+add a column
+remove a column
+
+//Drop command to drop a table
+drop table customers;
+
+
+============================================================================================================================================================
+
+DATA-TYPES IN SQL
+
+An SQL developer must decide what type of data that will be stored inside each column when creating a table. The data type is a guideline for SQL to understand what type of data is expected inside of each column, and it also identifies how SQL will interact with the stored data.
+
+
+1)INT : Takes up only numeric values with decimal
+2)VARCHAR : A VARIABLE length string (can contain letters, numbers, and special characters). The size parameter specifies the maximum column length in 	 	    characters - can be from 0 to 65535
+3)BIGINT : A large integer
+4)FLOAT  : A floating point number.
+5)DOUBLE : A normal-size floating point number.
+6)DATE : A date. Format: YYYY-MM-DD. The supported range is from '1000-01-01' to '9999-12-31'
+7)DATETIME : A date and time combination. Format: YYYY-MM-DD hh:mm:ss. The supported range is from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'. Adding 	     DEFAULT and ON UPDATE in the column definition to get automatic initialization and updating to the current date and time
+8)TIMESTAMP : 
+9)TIME : A time. Format: hh:mm:ss. The supported range is from '-838:59:59' to '838:59:59'
+10)YEAR : A year in four-digit format. Values allowed in four-digit format: 1901 to 2155, and 0000.MySQL 8.0 does not support year in two-digit format.
+11)BOOLEAN : Equal to BOOL (true/false)
+
+
