@@ -1,0 +1,101 @@
+SQL NOTES
+
+***********************************************************************************************************************************************************
+
+# What is Data?
+
+=> Anything & Everything can be considered as data.
+=> Any Information or fact can be considered as data.
+=> For an insurance company , details related to its employees, customers, their products or even their address can be data.
+=> Data can be in any form such as a text msg, an image or a video or a document or a single character itself.
+
+
+**********************************************************************************************************************************************************
+
+# What is a Databas?
+
+=> A container which is filled with data or information which is electronically stored in a computer system.
+=> Dat in any form can be stored in the database.
+=> All companies use database to store the information /data.
+=> Purpose of storing data in database is:
+  * Easily Accessed
+  * Modified
+  * Protected
+  * Analyzed
+
+************************************************************************************************************************************************************
+
+# What is SQL?
+
+=> Structured Query Language(SQL). Also referred to as "SEQUEL".
+=> It is a language to interact with RDBMS.
+=> All major RDBMS like Oracle , MySQL. MSSQL, PostgreSQL etc uses SQL.
+
+=> USING SQL, We can:
+	->Read data from RDBMS
+	->Write data into RDBMS
+	->Create, modify or delete database
+	->Analyze data
+	->Build reports
+
+************************************************************************************************************************************************************
+
+# How data is stored in RDBMS 
+
+=> In RDBMS , data is stored in multiple tables. Each table can have a set of rows and columns. Different tables will be related to each other through certain
+ columns forming relationship between these tables.
+
+
+************************************************************************************************************************************************************
+
+SQL Commands
+
+1) DDL(DATA DEFINITION LANGUAGE): Used to define the structur of database object such as tables, views, Procedurs and functions.DDL is a set of SQL commands 
+used to create, modify, and delete database structures but not data
+ 
+List of DDL commands: 
+
+1) CREATE: This command is used to create the database or its objects (like table, index, function, views, store procedure, and triggers).
+2) DROP: This command is used to delete objects from the database.
+3) ALTER: This is used to alter the structure of the database.
+4) TRUNCATE: This is used to remove all records from a table, including all spaces allocated for the records are removed.
+5) COMMENT: This is used to add comments to the data dictionary.
+6) RENAME: This is used to rename an object existing in the database.
+
+
+2) DML(Data Manipulation Language): The SQL commands that deal with the manipulation of data present in the database belong to DML or 
+Data Manipulation Language and this includes most of the SQL statements. It is the component of the SQL statement that controls access to data 
+and to the database. Basically, DCL statements are grouped with DML statements.
+
+List of DML commands: 
+
+1) INSERT: It is used to insert data into a table.
+2) UPDATE: It is used to update existing data within a table.
+3) DELETE: It is used to delete records from a database table.
+
+
+3) DCL (Data Control Language): DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls 
+of the database system. 
+
+List of  DCL commands: 
+
+1) GRANT: This command gives users access privileges to the database.
+2) REVOKE: This command withdraws the user’s access privileges given by using the GRANT command.
+
+
+4) TCL (Transaction Control Language): Transactions group a set of tasks into a single execution unit. Each transaction begins with a specific task 
+and ends when all the tasks in the group successfully complete.
+ If any of the tasks fail, the transaction fails. Therefore, a transaction has only two results: success or failure.
+ You can explore more about transactions here. Hence, the following TCL commands are used to control the execution of a transaction: 
+
+1) COMMIT: Commits a Transaction.
+2) ROLLBACK: Rollbacks a transaction in case of any error occurs.
+3) SAVEPOINT: Sets a save point within a transaction.
+
+
+5) DQL (Data Query Language): DQL statements are used for performing queries on the data within schema objects.
+ The purpose of the DQL Command is to get some schema relation based on the query passed to it.
+
+List of DQL: 
+
+1) SELECT: It is used to retrieve data from the database.
